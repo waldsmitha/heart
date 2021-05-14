@@ -28,6 +28,7 @@ html {
 
 body {
   font-family: "Lexend Tera", sans-serif;
+  background: $dark-bg;
   // font-family: "Montserrat", sans-serif;
   // overflow-x: hidden;
 }
@@ -125,7 +126,7 @@ nav {
     }
 
     #burger {
-      position: fixed;
+      position: absolute;
       padding: 2rem 2rem;
       // background: #696969;
       bottom: 16%;

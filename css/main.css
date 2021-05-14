@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Lexend Tera", sans-serif;
+  background: #131313;
 }
 
 h1,
@@ -139,7 +140,7 @@ nav .mobile-nav li {
 }
 
 nav .mobile-nav #burger {
-  position: fixed;
+  position: absolute;
   padding: 2rem 2rem;
   bottom: 16%;
   left: 0;
