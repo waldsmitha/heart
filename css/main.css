@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 html {
@@ -202,7 +203,7 @@ nav .desktop-nav {
     color: white;
     text-decoration: none;
     position: relative;
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
   nav ul li:hover + span {
     width: 100%;
@@ -214,8 +215,8 @@ nav .desktop-nav {
     transition: 0.5s;
     width: 0%;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -10%;
+    left: 0%;
   }
   nav .mobile-nav {
     display: none;
@@ -255,7 +256,7 @@ nav .desktop-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 60vh;
+  height: 82vh;
 }
 
 #landing .image img {
@@ -282,7 +283,7 @@ nav .desktop-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 7rem;
+  padding-left: 12vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -305,7 +306,7 @@ nav .desktop-nav {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 2rem;
+  padding: 5rem 2rem;
 }
 
 #news .container {
@@ -393,7 +394,7 @@ nav .desktop-nav {
 #tour {
   min-height: 100vh;
   width: 100vw;
-  padding: 2rem;
+  padding: 5rem;
   background: black;
   background-image: url("../img/man-on-stage.jpg");
   background-repeat: no-repeat;
@@ -443,6 +444,12 @@ nav .desktop-nav {
 
 #tour h1 span {
   color: #fae53d;
+}
+
+@media screen and (max-width: 768px) {
+  #tour {
+    padding: 2rem;
+  }
 }
 
 #contact {
@@ -546,10 +553,6 @@ nav .desktop-nav {
 
 #contact button:focus::after {
   width: 100%;
-}
-
-#contact button:hover {
-  cursor: pointer;
 }
 
 footer {
