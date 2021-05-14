@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap"
+      rel="stylesheet"
+    />
+    <title>Heart Nouveau</title>
+  </head>
+  <body>
+    <div id="load-fade"></div>
+    <div class="cursor"></div>
+    <nav>
+      <div class="hide">
+        <div id="logo">
+          <h1>Heart <span id="nouveau">Nouveau</span></h1>
+        </div>
+      </div>
+      <ul class="desktop-nav">
+        <a href="#news">
+          <li class="nav-item active">News</li>
+          <span></span>
+        </a>
+        <a href="#store"
+          ><li class="nav-item active">Store</li>
+          <span></span>
+        </a>
+        <a href="#tour"
+          ><li class="nav-item active">Tour</li>
+          <span></span
+        ></a>
+        <a href="#contact"
+          ><li class="nav-item active">Contact</li>
+          <span></span
+        ></a>
+      </ul>
+      <div class="mobile-nav">
+        <ul>
+          <a href="#news">
+            <li class="nav-item active">News</li>
+          </a>
+          <a href="#store">
+            <li class="nav-item active">Store</li>
+          </a>
+          <a href="#tour">
+            <li class="nav-item active">Tour</li>
+          </a>
+          <a href="#contact">
+            <li class="nav-item active">Contact</li>
+          </a>
+        </ul>
+        <div id="burger">
+          <p>NAV</p>
+        </div>
+        <div class="exit-message"><p>Click anywhere to exit.</p></div>
+        <div class="mini-logo">
+          <a href="#logo"><h1>HN</h1></a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="landing">
+      <div class="image">
+        <img id="blue-face" src="./img/Heart Nouveau 1.png" alt="" />
+      </div>
+      <div id="intro-message">
+        <h1>"Façade" Out Now</h1>
+      </div>
+      <video
+        src="./Compressed Yellow Mixing Paint.m4v"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+    </div>
+    <section id="news">
+      <div class="container">
+        <div id="red-man">
+          <img id="red-man-img" src="./img/red-man.jpg" alt="" />
+        </div>
+        <div class="text">
+          <div>
+            <h1>Façade</h1>
+            <div class="hide">
+              <p class="reveal-p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis quisquam facilis beatae molestias qui impedit,
+                accusamus eius pariatur inventore expedita minima necessitatibus
+                iste labore quibusdam neque adipisci sequi voluptatem iusto
+                dignissimos! Commodi mollitia doloribus reprehenderit rem sunt?
+              </p>
+            </div>
+            <div class="hide">
+              <p class="reveal-p">
+                Ea quis numquam consectetur esse nostrum eveniet totam laborum?
+                Deserunt fugiat aliquam assumenda qui sit vero vitae id
+                laudantium nostrum quae sapiente temporibus quaerat dolorem
+                culpa quos, aspernatur quo maiores voluptatem incidunt autem,
+                repudiandae iste aperiam. Culpa sunt nulla accusamus, maxime
+                voluptatum molestias?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tour">
+      <h1>Tour <span id="yellow-date">Dates</span></h1>
+      <ul id="dates" class="hide">
+        <a><li class="date">Boston, MA - 6/19/2020</li></a>
+        <a><li class="date">Boston, MA - 6/19/2020</li></a>
+        <a><li class="date">Boston, MA - 6/19/2020</li></a>
+        <a><li class="date">Boston, MA - 6/19/2020</li></a>
+        <a><li class="date">Boston, MA - 6/19/2020</li></a>
+      </ul>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <form action="">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="First Last"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@email.com"
+          required
+        />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit" class="active">Submit</button>
+      </form>
+    </section>
+    <footer>Austin Waldmith &copy; 2021</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
