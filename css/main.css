@@ -103,8 +103,8 @@ nav .mobile-nav {
   color: #131313;
   padding: 0 2rem;
   z-index: 10;
-  -webkit-clip-path: circle(12vh at 3% 100%);
-          clip-path: circle(12vh at 3% 100%);
+  -webkit-clip-path: circle(10vh at 0% 80%);
+          clip-path: circle(10vh at 0% 80%);
   -webkit-transition: 1s;
   transition: 1s;
   display: -webkit-box;
@@ -141,7 +141,7 @@ nav .mobile-nav li {
 nav .mobile-nav #burger {
   position: fixed;
   padding: 2rem 2rem;
-  bottom: 0;
+  bottom: 16%;
   left: 0;
   pointer-events: none;
 }
@@ -283,7 +283,6 @@ nav .desktop-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 12vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
