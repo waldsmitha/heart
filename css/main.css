@@ -627,6 +627,16 @@ footer {
   color: #fae53d;
 }
 
+header {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,8 +697,8 @@ footer {
   #albums {
     padding: 5rem;
   }
-  h1 {
-    font-size: 5rem;
+  #albums h1 {
+    font-size: calc(5rem + 10vw);
   }
 }
 /*# sourceMappingURL=main.css.map */
