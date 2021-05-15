@@ -1,0 +1,71 @@
+#albums {
+  padding: 2rem;
+  background: rgb(19, 19, 19);
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  h1 {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: $yellow;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  .flex-left,
+  .flex-right {
+    width: 100%;
+    flex: 1 1 40rem;
+  }
+
+  .flex-item {
+    padding: 2rem 0;
+    max-width: 40rem;
+    margin: 0 auto;
+    position: relative;
+
+    .album-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      width: 110%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  img,
+  .album-text {
+    pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .flex-right {
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #albums {
+    padding: 5rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}

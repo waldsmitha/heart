@@ -30,7 +30,7 @@ body {
   font-family: "Lexend Tera", sans-serif;
   background: $dark-bg;
   // font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 h1,
@@ -233,11 +233,6 @@ nav {
 #news {
   min-height: 100vh;
   background: rgb(19, 19, 19);
-  background: linear-gradient(
-    180deg,
-    rgba(19, 19, 19, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
   display: flex;
   align-content: center;
   padding: 5rem 2rem;
@@ -477,3 +472,5 @@ footer {
     background: none;
   }
 }
+
+@import "./albums";

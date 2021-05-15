@@ -14,7 +14,6 @@ html {
 body {
   font-family: "Lexend Tera", sans-serif;
   background: #131313;
-  overflow-x: hidden;
 }
 
 h1,
@@ -293,8 +292,6 @@ nav .desktop-nav {
 #news {
   min-height: 100vh;
   background: #131313;
-  background: -webkit-gradient(linear, left top, left bottom, from(#131313), to(black));
-  background: linear-gradient(180deg, #131313 0%, black 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,6 +611,84 @@ footer {
   }
   #landing .image img {
     max-height: 70vh;
+  }
+}
+
+#albums {
+  padding: 2rem;
+  background: #131313;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313), to(black));
+  background: linear-gradient(180deg, #131313 0%, black 100%);
+}
+
+#albums h1 {
+  padding-bottom: 2rem;
+  font-size: 4rem;
+  color: #fae53d;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container .flex-left,
+.container .flex-right {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.container .flex-item {
+  padding: 2rem 0;
+  max-width: 40rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .flex-item .album-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 110%;
+}
+
+.container .flex-item .album-text img {
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container img,
+.container .album-text {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 840px) {
+  .flex-right {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #albums {
+    padding: 5rem;
+  }
+  h1 {
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

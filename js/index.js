@@ -122,6 +122,47 @@ gsap.from(".reveal-p", {
   ease: "sine",
 });
 
+//Albums
+const tlAlbums = gsap.timeline({ defaults: { duration: 0.5 } });
+
+gsap.from(".left", {
+  scrollTrigger: {
+    trigger: "#albums",
+    start: "top 50%",
+  },
+  duration: 0.75,
+  opacity: 0,
+  x: "-100%",
+  rotate: "5deg",
+  stagger: 0.25,
+  ease: "power",
+});
+gsap.from(".right", {
+  scrollTrigger: {
+    trigger: "#albums",
+    start: "top 50%",
+  },
+  duration: 0.75,
+  opacity: 0,
+  x: "100%",
+  rotate: "-5deg",
+  stagger: 0.25,
+  ease: "power",
+});
+gsap.from("#album-header", {
+  scrollTrigger: {
+    trigger: "#albums",
+    start: "top 50%",
+  },
+  duration: 1,
+  opacity: 0,
+  y: "100%",
+  stagger: 0.25,
+  ease: "power",
+});
+
+//Tour
+
 gsap.from(".date", {
   scrollTrigger: {
     trigger: "#tour",
