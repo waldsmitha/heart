@@ -88,6 +88,7 @@ gsap.to("#intro-message", {
 //   opacity: 0,
 // });
 
+//News
 gsap.from("#red-man", {
   scrollTrigger: {
     trigger: "#red-man",
@@ -125,30 +126,39 @@ gsap.from(".reveal-p", {
 //Albums
 const tlAlbums = gsap.timeline({ defaults: { duration: 0.5 } });
 
-gsap.from(".left", {
-  scrollTrigger: {
-    trigger: "#albums",
-    start: "top 50%",
-  },
-  duration: 0.75,
-  opacity: 0,
-  x: "-100%",
-  rotate: "5deg",
-  stagger: 0.25,
-  ease: "power",
+const leftElements = document.querySelectorAll(".left");
+const rightElements = document.querySelectorAll(".right");
+
+leftElements.forEach((item) => {
+  gsap.from(item, {
+    scrollTrigger: {
+      trigger: item,
+      start: "top 50%",
+    },
+    duration: 0.75,
+    opacity: 0,
+    x: "-100%",
+    rotate: "5deg",
+    stagger: 0.25,
+    ease: "power",
+  });
 });
-gsap.from(".right", {
-  scrollTrigger: {
-    trigger: "#albums",
-    start: "top 50%",
-  },
-  duration: 0.75,
-  opacity: 0,
-  x: "100%",
-  rotate: "-5deg",
-  stagger: 0.25,
-  ease: "power",
+
+rightElements.forEach((item) => {
+  gsap.from(item, {
+    scrollTrigger: {
+      trigger: item,
+      start: "top 50%",
+    },
+    duration: 0.75,
+    opacity: 0,
+    x: "100%",
+    rotate: "5deg",
+    stagger: 0.25,
+    ease: "power",
+  });
 });
+
 gsap.from("#album-header", {
   scrollTrigger: {
     trigger: "#albums",
