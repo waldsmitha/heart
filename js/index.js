@@ -5,7 +5,7 @@ const mobileNav = document.querySelector(".mobile-nav");
 function cursor(e) {
   mouse.style.top = e.pageY + "px";
   mouse.style.left = e.pageX + "px";
-  console.log(e.target.classList.contains("active"));
+  // console.log(e.target.classList.contains("active"));
   e.target.classList.contains("active")
     ? gsap.to(mouse, {
         height: "5rem",
@@ -112,13 +112,14 @@ gsap.from("#red-man-img", {
 
 gsap.from(".reveal-p", {
   scrollTrigger: {
-    trigger: "#red-man",
-    start: "top 50%",
+    trigger: ".reveal-p",
+    start: "40% bottom",
   },
   y: 400,
-  stagger: 0.25,
-  duration: 1,
+  stagger: 0.35,
+  duration: 0.75,
   opacity: 0,
+  ease: "sine",
 });
 
 gsap.from(".date", {
@@ -142,6 +143,19 @@ gsap.from("#yellow-date", {
   duration: 1,
   delay: 0.5,
   opacity: 0,
+  ease: "sine",
+});
+
+gsap.from(".circle", {
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 50%",
+  },
+  // y: "100%",
+  scale: 2,
+  duration: 1,
+  delay: 0.25,
+  // opacity: 0,
   ease: "sine",
 });
 

@@ -92,8 +92,12 @@
             <div class="hide">
               <p class="reveal-p">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis quisquam facilis beatae molestias qui impedit,
-                accusamus eius pariatur inventore expedita minima necessitatibus
+                Blanditiis quisquam facilis beatae molestias qui impedit.
+              </p>
+            </div>
+            <div class="hide">
+              <p class="reveal-p">
+                Accusamus eius pariatur inventore expedita minima necessitatibus
                 iste labore quibusdam neque adipisci sequi voluptatem iusto
                 dignissimos! Commodi mollitia doloribus reprehenderit rem sunt?
               </p>
@@ -123,10 +127,12 @@
       </ul>
     </section>
     <section id="contact">
+      <div class="circle"></div>
       <h1>Contact</h1>
       <form action="">
         <label for="name">Name:</label>
         <input
+          class="active"
           type="text"
           name="name"
           id="name"
@@ -135,6 +141,7 @@
         />
         <label for="email">Email:</label>
         <input
+          class="active"
           type="email"
           name="email"
           id="email"
@@ -142,7 +149,13 @@
           required
         />
         <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea
+          class="active"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
         <button type="submit" class="active">Submit</button>
       </form>
     </section>
