@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Lexend Tera", sans-serif;
   background: #131313;
+  overflow-x: hidden;
 }
 
 h1,
@@ -47,8 +48,8 @@ p {
 
 .cursor {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   background: rgba(165, 165, 165, 0.479);
   border: 2px solid #f2f2f2;
   border-radius: 50%;
@@ -58,17 +59,14 @@ p {
           transform: translate(-50%, -50%);
   z-index: 10;
   pointer-events: none;
+  mix-blend-mode: difference;
+  background: white;
 }
 
 @media screen and (max-width: 768px) {
   .cursor {
     display: none;
   }
-}
-
-.cursor-active {
-  width: 5rem;
-  height: 5rem;
 }
 
 nav {
@@ -257,7 +255,7 @@ nav .desktop-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 82vh;
+  height: 80vh;
 }
 
 #landing .image img {
@@ -268,7 +266,7 @@ nav .desktop-nav {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -279,7 +277,7 @@ nav .desktop-nav {
 
 #landing #intro-message {
   background: #131313;
-  width: 100%;
+  width: 100vw;
   min-height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,12 +288,6 @@ nav .desktop-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  #landing #intro-message {
-    padding: 0;
-  }
 }
 
 #news {
@@ -397,7 +389,6 @@ nav .desktop-nav {
   min-height: 100vh;
   width: 100vw;
   padding: 2rem;
-  background: black;
   background-image: url("../img/man-on-stage.jpg");
   background-repeat: no-repeat;
   background-position: center;

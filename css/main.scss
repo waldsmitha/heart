@@ -30,7 +30,7 @@ body {
   font-family: "Lexend Tera", sans-serif;
   background: $dark-bg;
   // font-family: "Montserrat", sans-serif;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h1,
@@ -66,8 +66,8 @@ p {
 
 .cursor {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   background: rgba(165, 165, 165, 0.479);
   border: 2px solid #f2f2f2;
   border-radius: 50%;
@@ -76,13 +76,13 @@ p {
   transform: translate(-50%, -50%);
   z-index: 10;
   pointer-events: none;
+
+  mix-blend-mode: difference;
+  background: white;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
-}
-.cursor-active {
-  width: 5rem;
-  height: 5rem;
 }
 
 nav {
@@ -202,7 +202,7 @@ nav {
   .image {
     @include flex(center, column, center);
     // background: white;
-    height: 82vh;
+    height: 80vh;
     img {
       max-height: 50vh;
     }
@@ -212,7 +212,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -222,18 +222,11 @@ nav {
 
   #intro-message {
     background: $dark-bg;
-    width: 100%;
+    width: 100vw;
     min-height: 10vh;
     display: flex;
-
     align-items: center;
     justify-content: center;
-  }
-
-  @media screen and (min-width: 768px) {
-    #intro-message {
-      padding: 0;
-    }
   }
 }
 
@@ -305,7 +298,6 @@ nav {
   min-height: 100vh;
   width: 100vw;
   padding: 2rem;
-  background: black;
   background-image: url("../img/man-on-stage.jpg");
   background-repeat: no-repeat;
   background-position: center;

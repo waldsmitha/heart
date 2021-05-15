@@ -8,13 +8,13 @@ function cursor(e) {
   // console.log(e.target.classList.contains("active"));
   e.target.classList.contains("active")
     ? gsap.to(mouse, {
-        height: "5rem",
-        width: "5rem",
+        height: "10rem",
+        width: "10rem",
         duration: 0.25,
       })
     : gsap.to(mouse, {
-        height: "3rem",
-        width: "3rem",
+        height: "5rem",
+        width: "5rem",
         duration: 0.25,
       });
 }
