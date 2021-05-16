@@ -24,13 +24,15 @@ $dark-bg: #131313;
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  
 }
 
 body {
   font-family: "Lexend Tera", sans-serif;
   background: $dark-bg;
+  overflow-x:hidden ;
   // font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  
 }
 
 h1,

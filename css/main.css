@@ -616,6 +616,7 @@ footer {
 }
 
 #albums {
+  overflow-x: hidden;
   padding: 2rem;
   background: #131313;
   background: -webkit-gradient(linear, left top, left bottom, from(#131313), to(black));
