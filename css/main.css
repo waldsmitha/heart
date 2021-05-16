@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Lexend Tera", sans-serif;
   background: #131313;
+  overflow-x: hidden;
 }
 
 h1,
