@@ -116,7 +116,7 @@ gsap.from(".reveal-p", {
     trigger: ".reveal-p",
     start: "40% bottom",
   },
-  y: 400,
+  y: '-100%',
   stagger: 0.35,
   duration: 0.75,
   opacity: 0,
